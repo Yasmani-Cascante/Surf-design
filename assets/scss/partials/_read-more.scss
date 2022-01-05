@@ -1,0 +1,31 @@
+.read-more-section {
+    position: relative;
+    .big-img {
+      max-width: 706px;
+      margin: 0 auto;
+      img {
+        position: relative;
+        top: 43px;
+        right: 0;
+        width: 100%;
+      }
+    }
+  
+  }
+  
+  
+  /* ============================
+   Media Queries
+  =============================== */
+  @media only screen and (min-width: 1090px) {
+    .read-more-section {
+      position: relative;
+      img.img {
+        position: absolute;
+        top: 43px;
+        right: 0;
+        width: 706px;
+        height: 549px;
+      }
+    }
+  }

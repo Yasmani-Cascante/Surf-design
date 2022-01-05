@@ -1,0 +1,18 @@
+// Colors
+$white: #fff;
+$black: rgba(11, 12, 17, 0.9);
+$gray-1: rgba(51, 51, 51, 0.9);
+$gray-2: #f9f9f9;
+
+$soft-blue: #5da8ef; // blue
+
+// # Sizes
+$base-line-height: 1.6;
+
+// # Font
+$LeagueSpartan-path: "../../fonts";
+@font-face {
+ font-family: "LeagueSpartan";
+ src: url($LeagueSpartan-path +"/LeagueSpartan-Bold.otf") format("otf");
+}
+$LeagueSpartan_font_family: 'LeagueSpartan', sans-serif;

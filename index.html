@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>exercice</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="banner">
+      <div class="content-wrapper">
+        <div class="global-header">
+          <nav class="global-nav">
+            <div class="flex-nav">
+              <div class="logo">
+                <img src="assets/img/svg/logo.svg" class="logo" />
+              </div>
+            </div>
+
+            <button id="menuBtn" class="hamburger" onClick="navToggle()">
+              <span class="hamburger__top-bun"></span>
+              <span class="hamburger__bottom-bun"></span>
+            </button>
+          </nav>
+
+          <ul id="menu" class="clear-floats nav bare-list hidden">
+            <li><a class="a-link" href="#">stories</a></li>
+            <li><a class="a-link" href="#">events</a></li>
+            <li><a class="a-link" href="#">places</a></li>
+            <li><a class="a-link" href="#">boards</a></li>
+          </ul>
+        </div>
+
+        <div class="masthead">
+          <div class="masthead__info">
+            <span>your</span>
+            <h1>Beautiful Escape</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="masthead__img">
+            <img
+              src="assets/img/jpg/img.jpg"
+              srcset="img/img@2x.jpg 2x, img/img@3x.jpg 3x"
+              class="img"
+            />
+          </div>
+        </div>
+        <div class="right-panel">
+          <div class="fixe-element">
+            <p>first surfing magazine</p>
+            <div class="social">
+              <img
+                src="assets/img/png/tumblr.png"
+                srcset="img/tumblr@2x.png 2x, img/tumblr@3x.png 3x"
+                class="social_img"
+              />
+              <img
+                src="assets/img/png/twitter.png"
+                srcset="img/twitter@2x.png 2x, img/twitter@3x.png 3x"
+                class="social_img"
+              />
+              <img
+                src="assets/img/png/vimeo.png"
+                srcset="img/vimeo@2x.png 2x, img/vimeo@3x.png 3x"
+                class="social_img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main content -->
+    <!-- <main class="align-top"> -->
+    <main>
+      <!-- <div class="content-wrapper"> -->
+      <div class="main-frase">
+        <p>
+          Surfing is the most blissful experience you can have on this planet, a
+          taste of heaven.
+        </p>
+        <span>John Mccarthy</span>
+        <div class="vertical-line"></div>
+      </div>
+      <!-- </div> -->
+      <div class="content-wrapper">
+        <div class="read-more-section">
+          <div class="card">
+            <img
+              src="assets/img/jpg/img_4.jpg"
+              srcset="img/img_4@2x.jpg 2x, img/img_4@3x.jpg 3x"
+            />
+            <div class="card__info">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad
+                minim.
+              </p>
+              <button class="btn">read more</button>
+            </div>
+          </div>
+          <div class="big-img">
+            <img
+              src="assets/img/jpg/img.jpg"
+              srcset="img/img@2x.jpg 2x, img/img@3x.jpg 3x"
+              class="img"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="shop">
+        <div class="shop__title">
+          <span>shop</span>
+          <h2>Surfboards</h2>
+        </div>
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="board">
+                <div class="board-wrapper">
+                  <img
+                    src="assets/img/jpg/board.jpg"
+                    srcset="img/board@2x.jpg 2x, img/board@3x.jpg 3x"
+                    class="board__img"
+                  />
+                  <div class="board__info">
+                    <span>funboards</span>
+                    <h3>Chilli Rare Bird</h3>
+
+                    <div class="board__price">
+                      <em>$890</em>
+                      <a href="">buy</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="board">
+                <div class="board-wrapper">
+                  <img
+                    src="assets/img/jpg/board.jpg"
+                    srcset="img/board@2x.jpg 2x, img/board@3x.jpg 3x"
+                    class="board__img"
+                  />
+                  <div class="board__info">
+                    <span>funboards</span>
+                    <h3>Chilli Rare Bird</h3>
+
+                    <div class="board__price">
+                      <em>$890</em>
+                      <a href="">buy</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="board">
+                <div class="board-wrapper">
+                  <img
+                    src="assets/img/jpg/board.jpg"
+                    srcset="img/board@2x.jpg 2x, img/board@3x.jpg 3x"
+                    class="board__img"
+                  />
+                  <div class="board__info">
+                    <span>funboards</span>
+                    <h3>Chilli Rare Bird</h3>
+
+                    <div class="board__price">
+                      <em>$890</em>
+                      <a href="">buy</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="board">
+                <div class="board-wrapper">
+                  <img
+                    src="assets/img/jpg/board.jpg"
+                    srcset="img/board@2x.jpg 2x, img/board@3x.jpg 3x"
+                    class="board__img"
+                  />
+                  <div class="board__info">
+                    <span>funboards</span>
+                    <h3>Chilli Rare Bird</h3>
+
+                    <div class="board__price">
+                      <em>$890</em>
+                      <a href="">buy</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="board">
+                <div class="board-wrapper">
+                  <img
+                    src="assets/img/jpg/board.jpg"
+                    srcset="img/board@2x.jpg 2x, img/board@3x.jpg 3x"
+                    class="board__img"
+                  />
+                  <div class="board__info">
+                    <span>funboards</span>
+                    <h3>Chilli Rare Bird</h3>
+
+                    <div class="board__price">
+                      <em>$890</em>
+                      <a href="">buy</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Swiper whitout buttons -->
+          <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
+        </div>
+        <div class="align-center">
+          <button class="btn">show all</button>
+        </div>
+      </div>
+
+      <div class="content-wrapper">
+        <div class="surf-training">
+          <div class="surf-trainig__info">
+            <span>01</span>
+            <h2>Surf Training</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. U enim
+              ad minim veniam.
+            </p>
+            <button class="btn">read more</button>
+          </div>
+          <div class="surf-trainig-img-wrapper">
+            <img
+              src="assets/img/jpg/img_4.jpg"
+              srcset="img/img_4@2x.jpg 2x, img/img_4@3x.jpg 3x"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-wrapper">
+        <div class="logo">
+          <img src="assets/img/svg/logo.svg" class="logo" />
+        </div>
+        <ul class="clear-floats nav bare-list">
+          <li><a class="a-link" href="index.html">stories</a></li>
+          <li><a class="a-link" href="molecules.html">events</a></li>
+          <li><a class="a-link" href="organisms.html">places</a></li>
+          <li><a class="a-link" href="organisms.html">boards</a></li>
+        </ul>
+        <div class="social">
+          <img
+            src="assets/img/png/tumblr.png"
+            srcset="img/tumblr@2x.png 2x, img/tumblr@3x.png 3x"
+            class="social_img"
+          />
+          <img
+            src="assets/img/png/twitter.png"
+            srcset="img/twitter@2x.png 2x, img/twitter@3x.png 3x"
+            class="social_img"
+          />
+          <img
+            src="assets/img/png/vimeo.png"
+            srcset="img/vimeo@2x.png 2x, img/vimeo@3x.png 3x"
+            class="social_img"
+          />
+        </div>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

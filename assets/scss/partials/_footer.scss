@@ -1,0 +1,18 @@
+/* ==========================
+Footer
+ ============================ */
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  ul {
+    display: flex;
+    flex-direction: row;
+    li {
+      border-bottom: 0;
+    }
+  }
+}
+
+

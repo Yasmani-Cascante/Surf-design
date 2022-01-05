@@ -1,0 +1,17 @@
+
+/*
+  Tablets
+=========================*/
+@mixin tablet {
+  @media only screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+
+/* Desktop */
+@mixin desktop {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}

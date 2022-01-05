@@ -1,0 +1,16 @@
+.btn {
+  background: #fff;
+  border: none;
+  border-bottom: 1px solid $soft-blue;
+  letter-spacing: 5.4px;
+  font-family: $LeagueSpartan_font_family;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  margin-top: 49px;
+  &:hover {
+    cursor: pointer;
+  }
+
+}

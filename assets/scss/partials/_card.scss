@@ -1,0 +1,32 @@
+.card {
+  max-width: 613px;
+  // margin: 0 auto;
+  img {
+    // margin: 62px 37px 59px 70px;
+    height: 370px;
+    width: 100%;
+    margin-bottom: 59px;
+    object-fit: contain;
+  }
+  &__info {
+    max-width: 341px;
+    // margin: 0 auto;
+    text-align: left;
+    // outline: 1px solid;
+    p {
+      margin: 0;
+    }
+    button {
+      margin-top: 49px;
+    }
+  }
+}
+
+/* ============================
+ Media Queries
+=============================== */
+@media only screen and (max-width: 1090px) {
+  .card {
+    margin: 0 auto;
+  }
+}

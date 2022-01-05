@@ -1,0 +1,714 @@
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url("../../fonts/LeagueSpartan-Bold.otf") format("otf");
+}
+/*
+  Tablets
+=========================*/
+/* Desktop */
+/*-----------------------------
+ * HELPERS
+ *------------------------------*/
+.content-wrapper::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content-wrapper {
+  max-width: 123em;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.hidden {
+  display: none;
+}
+
+.bare-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.align-top {
+  margin-top: 19rem;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.h-no-underline-text a {
+  text-decoration: none;
+}
+
+.h-flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.h-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
+.clear-floats::after {
+  content: "";
+  clear: both;
+  /* left | right */
+  display: table;
+}
+
+.h-hide {
+  display: none;
+}
+
+/* ------------------------------
+ * BASE
+ * --------------------------- */
+html {
+  font-family: "Playfair Display", serif;
+  font-size: 62.5%;
+  line-height: 1.6;
+}
+
+body {
+  color: rgba(51, 51, 51, 0.9);
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+ Typography
+============================ */
+p, ul, span, label {
+  font-size: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6,
+.alpha, .beta, .gamma, .delta, .epsilon, .zeta {
+  margin: 0 0 0.5em 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+h1,
+.alpha {
+  font-size: 3.6em;
+  line-height: 1.2;
+  color: rgba(11, 12, 17, 0.9);
+}
+
+h2,
+.beta {
+  font-size: 3.6em;
+  line-height: 1.2;
+  color: rgba(11, 12, 17, 0.9);
+}
+
+h3 .gamma {
+  /* font-size: 1.6em; */
+  font-size: 2.8em;
+  line-height: 1.2;
+  color: rgba(11, 12, 17, 0.9);
+}
+
+h4,
+.delta {
+  font-size: 1.3em;
+  line-height: 1.5;
+  color: rgba(51, 51, 51, 0.9);
+  text-transform: uppercase;
+}
+
+h5,
+.epsilon {
+  font-size: 1.4em;
+  line-height: 1.4;
+  color: rgba(51, 51, 51, 0.9);
+}
+
+h6 .zeta {
+  font-size: 1.2em;
+  line-height: 1.4;
+  color: rgba(51, 51, 51, 0.9);
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.5em;
+  color: rgba(51, 51, 51, 0.9);
+}
+
+/* Typo Queries */
+@media only screen and (min-width: 480px) {
+  h1,
+.alpha {
+    font-size: 4em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  h1,
+.alpha {
+    font-size: 4.8em;
+  }
+}
+.btn {
+  background: #fff;
+  border: none;
+  border-bottom: 1px solid #5da8ef;
+  letter-spacing: 5.4px;
+  font-family: "LeagueSpartan", sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  margin-top: 49px;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+/*======================
+  Header
+========================= */
+.global-nav {
+  width: 100%;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/************************
+  Masthead
+**************************/
+.masthead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.masthead__info {
+  max-width: 473px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  position: absolute;
+}
+.masthead__info span {
+  color: #5da8ef;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 5.4px;
+  font-family: "LeagueSpartan", sans-serif;
+}
+.masthead__info h1 {
+  font-weight: bold;
+}
+.masthead__info p {
+  margin-top: 0;
+}
+.masthead__img {
+  margin-left: auto;
+  -webkit-box-shadow: 10px 2px 42px rgba(0, 0, 0, 0.35);
+          box-shadow: 10px 2px 42px rgba(0, 0, 0, 0.35);
+}
+.masthead__img img {
+  display: block;
+  max-width: 100%;
+}
+
+.right-panel {
+  text-align: right;
+}
+
+/* ============================
+ Media Queries
+=============================== */
+@media only screen and (max-width: 750px) {
+  .masthead {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .masthead__info {
+    position: relative;
+    max-width: 100%;
+    margin: 25px 0 10px 0;
+    margin-left: 0;
+  }
+
+  .masthead__img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .masthead__info {
+    padding: 1rem;
+    margin-left: 1rem;
+    background: rgba(255, 255, 255, 0.65);
+  }
+}
+/*
+  Navigation
+=============================== */
+.nav {
+  opacity: 0.9;
+  font-family: "LeagueSpartan", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 7.33;
+  letter-spacing: 5.58px;
+  text-align: right;
+  color: rgba(11, 12, 17, 0.9);
+}
+.nav li {
+  float: left;
+  margin-left: 1.6em;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid;
+}
+.nav li a {
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+/* ============================
+ Media Queries
+=============================== */
+@media only screen and (min-width: 600px) {
+  #menu li {
+    border-bottom: 0;
+  }
+}
+/* ==========================
+Footer
+ ============================ */
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer-wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.footer-wrapper ul li {
+  border-bottom: 0;
+}
+
+.vertical-line {
+  width: 2px;
+  height: 100px;
+  margin: 58px auto 0 auto;
+  background-color: #5da8ef;
+}
+
+.card {
+  max-width: 613px;
+}
+.card img {
+  height: 370px;
+  width: 100%;
+  margin-bottom: 59px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.card__info {
+  max-width: 341px;
+  text-align: left;
+}
+.card__info p {
+  margin: 0;
+}
+.card__info button {
+  margin-top: 49px;
+}
+
+/* ============================
+ Media Queries
+=============================== */
+@media only screen and (max-width: 1090px) {
+  .card {
+    margin: 0 auto;
+  }
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-frase {
+  max-width: 610px;
+  margin: 191px auto;
+  opacity: 0.9;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.46;
+  letter-spacing: 0.26px;
+  text-align: center;
+  color: rgba(51, 51, 51, 0.9);
+}
+.main-frase p {
+  font-size: 2.6rem;
+  color: rgba(51, 51, 51, 0.9);
+}
+.main-frase span {
+  font-family: LeagueSpartan;
+  color: rgba(11, 12, 17, 0.9);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "LeagueSpartan", sans-serif;
+  letter-spacing: 5.4px;
+  font-size: 1rem;
+}
+
+.read-more-section {
+  position: relative;
+}
+.read-more-section .big-img {
+  max-width: 706px;
+  margin: 0 auto;
+}
+.read-more-section .big-img img {
+  position: relative;
+  top: 43px;
+  right: 0;
+  width: 100%;
+}
+
+/* ============================
+ Media Queries
+=============================== */
+@media only screen and (min-width: 1090px) {
+  .read-more-section {
+    position: relative;
+  }
+  .read-more-section img.img {
+    position: absolute;
+    top: 43px;
+    right: 0;
+    width: 706px;
+    height: 549px;
+  }
+}
+.shop {
+  margin-top: 200px;
+}
+.shop__title {
+  text-align: center;
+}
+.shop__title span {
+  color: #5da8ef;
+  font-size: 0.9rem;
+  font-family: "LeagueSpartan", sans-serif;
+  letter-spacing: 5.4px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.shop__title h2 {
+  font-weight: bold;
+}
+.shop .board .board-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.shop .board__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.shop .board__price em {
+  width: 47px;
+  height: 18px;
+  margin: 33px auto 8px auto;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.1px;
+  text-align: left;
+  color: #ce60a8;
+}
+.shop .board__price a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: LeagueSpartan;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 5.4px;
+  color: #333333;
+  margin-top: 5px;
+}
+.shop .board__info span {
+  text-transform: uppercase;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 2.4px;
+  color: #7a7a7a;
+}
+.shop .board__info h3 {
+  font-size: 26px;
+  color: #333333;
+  margin-bottom: 0;
+}
+
+.surf-training {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 172px auto 158px auto;
+}
+.surf-training .surf-trainig__info {
+  max-width: 470px;
+  margin-right: 35px;
+  margin: 0 auto;
+}
+.surf-training .surf-trainig__info h2 {
+  color: #333333;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+.surf-training .surf-trainig__info span {
+  width: 151px;
+  height: 112px;
+  font-family: LeagueSpartan;
+  font-size: 130px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.51;
+  letter-spacing: 13px;
+  text-align: left;
+  color: #f9f9f9;
+  position: relative;
+  top: 35px;
+  z-index: 0;
+}
+.surf-training .surf-trainig__info .btn {
+  margin-bottom: 25px;
+}
+.surf-training .surf-trainig-img-wrapper {
+  max-width: 762px;
+  margin: 0 auto;
+}
+.surf-training img {
+  max-width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* ============================
+ Media Queries
+=============================== */
+@media only screen and (min-width: 900px) {
+  .surf-training {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+/* ============================
+HAMBURGER MENU
+=============================== */
+.hamburger {
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  background: transparent;
+  border: 0;
+}
+
+.hamburger__top-bun,
+.hamburger__bottom-bun {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: #000;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.hamburger:hover [class*=-bun] {
+  background: #333;
+}
+
+.hamburger__top-bun {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.hamburger__bottom-bun {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+.open {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+.open .hamburger__top-bun {
+  -webkit-transform: rotate(45deg) translateY(0px);
+          transform: rotate(45deg) translateY(0px);
+}
+
+.open .hamburger__bottom-bun {
+  -webkit-transform: rotate(-45deg) translateY(0px);
+          transform: rotate(-45deg) translateY(0px);
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* ============================
+ Media Queries
+=============================== */
+@media only screen and (min-width: 600px) {
+  #menuBtn {
+    display: none;
+  }
+
+  #menu {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+
+  .global-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}

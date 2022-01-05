@@ -1,0 +1,54 @@
+.surf-training {
+  display: flex;
+  flex-direction: column;
+  margin: 172px auto 158px auto;
+  .surf-trainig__info {
+    max-width: 470px;
+    margin-right: 35px;
+    margin: 0 auto;
+    h2 {
+      color: #333333;
+      font-weight: bold;
+      position: relative;
+      z-index: 1;
+    }
+    span {
+      width: 151px;
+      height: 112px;
+      font-family: LeagueSpartan;
+      font-size: 130px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 0.51;
+      letter-spacing: 13px;
+      text-align: left;
+      color: $gray-2;
+      position: relative;
+      top: 35px;
+      z-index: 0;
+    }
+    .btn {
+      margin-bottom: 25px;
+    }
+  }
+  .surf-trainig-img-wrapper {
+    max-width: 762px;
+    margin: 0 auto;
+  }
+  img {
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+  }
+}
+/* ============================
+ Media Queries
+=============================== */
+
+@media only screen and (min-width: 900px) {
+  .surf-training {
+    flex-direction: row;
+  }
+}

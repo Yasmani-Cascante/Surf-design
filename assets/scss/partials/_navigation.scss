@@ -1,0 +1,38 @@
+/*
+  Navigation
+=============================== */
+.nav {
+  opacity: 0.9;
+  font-family: "LeagueSpartan", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 7.33;
+  letter-spacing: 5.58px;
+  text-align: right;
+  color: rgba(11, 12, 17, 0.9);
+  li {
+    float: left;
+    margin-left: 1.6em;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid;
+    a {
+      text-decoration: none;
+      color: inherit;
+      text-transform: uppercase;
+    }
+  }
+}
+
+/* ============================
+ Media Queries
+=============================== */
+@media only screen and (min-width: 600px) {
+  #menu {
+    li {
+      border-bottom: 0;
+    }
+   }
+}
